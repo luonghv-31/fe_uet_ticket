@@ -1,0 +1,6 @@
+// Đây là file khai báo biến cho css sử dụng,
+//  giúp cho việc thay đổi màu sắc, font-size, font-family, ... dễ dàng hơn
+// và giúp cho việc quản lý css dễ dàng hơn
+// Mọi file scss sẽ import file này để sử dụng
+// Ví dụ: $primary-color: #333;
+// cách dùng .text-primary { color: $primary-color; }
