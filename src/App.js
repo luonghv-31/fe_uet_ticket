@@ -1,21 +1,24 @@
-import React from 'react';
-import './App.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import MainApp from './pages';
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <MainApp />
-  }
-])
+import React from "react";
+import "./App.css";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
+import Login from "./pages/Login/Login";
+import Register from "./pages/Register/Register";
 
 function App() {
   return (
-    <React.StrictMode>
-      <RouterProvider router={router}>
-        <MainApp />
-      </RouterProvider>
-    </React.StrictMode>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigate to="/login" replace />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        {/* Các route khác */}
+      </Routes>
+    </Router>
   );
 }
 
