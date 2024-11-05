@@ -1,8 +1,179 @@
-/* .register-container {
+.register-container {
   display: flex;
   height: 100vh;
-} */
-.register-container .image-side .image-group {
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.image-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-group {
+  border-radius: 20px;
+  max-height: 600px;
+  width: auto;
+}
+
+.form-side {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form-header h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.form-note .note-text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-inputs,
+.email-inputs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.name-inputs input,
+.email-inputs input,
+.form-body input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox-container label {
+  font-size: 14px;
+  color: #666;
+}
+
+.checkbox-container a {
+  color: #ff8682;
+  text-decoration: none;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #8dd3bb;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:disabled {
+  background-color: #8dd3bb;
+  cursor: not-allowed;
+}
+
+.have-account {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.have-account p {
+  font-size: 14px;
+  color: #666;
+}
+
+.have-account a {
+  color: #ff8682;
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.separator {
+  font-size: 12px;
+  color: #999;
+  margin: 20px 0;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-login .facebook-button,
+.social-login .google-button {
+  width: 205px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-login .facebook-button {
+  background-color: #3b5998;
+}
+
+.social-login .google-button {
+  background-color: #db4437;
+}
+
+.social-login .facebook-button:hover {
+  background-color: #2d4373;
+}
+
+.social-login .google-button:hover {
+  background-color: #c23321;
+}
+
+/* .register-container .image-side .image-group {
   position: absolute;
   width: 488px;
   height: 816px;
@@ -48,7 +219,6 @@
   top: 154px;
 }
 .register-container .form-side .form-header h1 {
-  /* TradeGothic/Bold/35px */
   font-style: normal;
   font-weight: 700;
   font-size: 35px;
@@ -61,9 +231,6 @@
   color: #666;
 }
 .register-container .form-side .form-container .form-body {
-  /* Frame 259 */
-
-  /* Auto layout */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -73,7 +240,6 @@
   width: 640px;
   height: 344px;
 
-  /* Inside auto layout */
   flex: none;
   order: 0;
   align-self: stretch;
@@ -89,16 +255,12 @@
   width: 640px;
   height: 56px;
 
-  /* Inside auto layout */
   flex: none;
   order: 0;
   align-self: stretch;
   flex-grow: 0;
 }
 .register-container .form-side .form-container .form-body .email-inputs {
-  /* Frame 267 */
-
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -125,11 +287,8 @@
 }
 
 .register-container .form-side .form-container .form-body input {
-  /* text field */
-
   box-sizing: border-box;
 
-  /* Auto layout */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -182,9 +341,6 @@
 }
 
 .have-account {
-  /* Frame 268 */
-
-  /* Auto layout */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -266,4 +422,4 @@
   .social-login
   .google-button {
   background-color: #db4437;
-}
+} */
