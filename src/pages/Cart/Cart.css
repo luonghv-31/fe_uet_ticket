@@ -1,0 +1,207 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Wrapper chính */
+.wrapper {
+    position: absolute; /* Đảm bảo wrapper chiếm toàn bộ màn hình */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Chiều rộng 100% của màn hình */
+    height: 100vh; /* Chiều cao 100% của màn hình */
+    background: #fff;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    border-radius: 10px;
+    font-size: 36px;
+    text-align: center;
+}
+
+/* Phần logo */
+.wrapper .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center; /* Căn giữa logo và văn bản theo chiều dọc */
+    border-bottom: 2px solid #000000; /* Đường kẻ dưới logo và văn bản */
+    padding-bottom: 5px; /* Khoảng cách giữa logo, văn bản và đường kẻ */
+}
+
+.wrapper .logo img {
+    width: 50px; /* Điều chỉnh kích thước logo */
+    height: auto;
+}
+
+.wrapper .logo .logo-text {
+    margin-left: 10px; /* Khoảng cách giữa logo và văn bản */
+    font-size: 24px; /* Kích thước văn bản "Giỏ hàng" */
+    color: #000000;
+    font-weight: 600;
+}
+
+/* Số lượng vé và thông tin giỏ hàng */
+.number-ticket {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    margin: 5px 0; /* Khoảng cách giữa các phần tử */
+    text-align: left;
+    padding-right: 1350px; /* Thêm padding-left để thẳng hàng */
+}
+/* Phần thông tin giỏ hàng */
+.cart-info {
+    background-color: #8DD3BB; /* Màu nền */
+    padding: 10px 15px;
+    border-radius: 0px; /* Bo góc khung */
+    margin-top: 10px; /* Khoảng cách từ logo đến khung giỏ hàng */
+    width: 100%;
+    max-width: 1500px; /* Giới hạn chiều rộng */
+    text-align:left;
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+}
+
+/* Khung thông tin tuyến xe */
+.route-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 1500px; /* Giới hạn chiều rộng */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Cấu trúc cho ảnh và văn bản trong cùng 1 dòng */
+.route-header {
+    display: flex; /* Sắp xếp ảnh và text theo hàng ngang */
+    align-items: center; /* Căn giữa ảnh và text theo chiều dọc */
+    width: 100%;
+}
+
+.route-image img {
+    width: 100px; /* Kích thước ảnh */
+    height: auto;
+    margin-right: 20px; /* Khoảng cách giữa ảnh và text */
+}
+
+.route-details {
+    display: flex;
+    flex-direction: column; /* Hiển thị các văn bản theo hàng ngang */
+    align-items: flex-start;
+}
+
+.route-destination, .route-vehicle {
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.route-destination {
+    font-weight: bold;
+    color: #000;
+}
+
+.route-vehicle {
+    color: #555;
+}
+
+/* Container cho route-time theo chiều dọc */
+.route-time-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Đảm bảo các phần tử không bị kéo vào giữa */
+    margin-top: 10px;
+}
+
+/* Đường line dọc ở giữa hai route-time */
+.vertical-line {
+    width: 1px;
+    height: 50px; /* Điều chỉnh chiều cao để nối giữa hai icon */
+    background-color: #191818;
+    transform: translateX(86px); /* Căn đường line dọc với các icon */
+    margin: 10px 0; /* Khoảng cách giữa đường line và các icon bên trên/dưới */
+}
+
+/* Căn chỉnh route-time */
+.route-time {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.departure-time {
+    font-size: 16px;
+    margin-right: 10px;
+    width: 60px;
+    text-align: right;
+}
+
+.route-time .icon {
+    margin-right: 10px;
+}
+
+.location-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.location-details span {
+    font-size: 14px;
+    color: #000000;
+}
+
+/* Phần bên phải - thông tin thanh toán */
+.right-info {
+    display: flex;
+    flex-direction: column; /* Căn các mục theo chiều dọc */
+    font-size: 14px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.right-info p {
+    margin: 10px 0; /* Khoảng cách giữa các mục */
+}
+
+.payment-status {
+    color: #ff0000; /* Màu đỏ */
+}
+
+/* Nút Đặt vé */
+.booking-button-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 250px;
+}
+
+.booking-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8DD3BB; /* Màu giống như giỏ hàng */
+    border: none;
+    color: black;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+.booking-button:hover {
+    background-color: #7bbda1; /* Màu tối hơn khi hover */
+}

@@ -1,0 +1,66 @@
+.news-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between; /* Đẩy hai nhóm ra hai bên */
+    align-items: center; /* Canh giữa theo chiều dọc */
+    margin-bottom: 20px;
+  }
+  
+  /* Bên trái */
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .car-icon {
+    font-size: 24px;
+    color: #333;
+    margin-right: 8px;
+  }
+  
+  .text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Bên phải */
+  .right-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .favourites {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Khoảng cách giữa Favourites và Avatar */
+  }
+  
+  .heart-icon {
+    font-size: 20px;
+    color: red;
+    margin-right: 5px;
+  }
+  
+  .avatar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .avatar-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  .avatar span {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+  }
+  

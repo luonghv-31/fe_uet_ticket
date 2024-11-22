@@ -9,6 +9,9 @@ import {
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import ChangePassword from "./pages/ChangePassword/ChangePassword";
+import Payment from "./pages/Payment/Payment";
+import Cart from "./pages/Cart/Cart";
+import News from "./pages/News/News";
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/change-password" element={<ChangePassword />} />
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/news" element={<News />} />
         {/* Các route khác */}
       </Routes>
     </Router>
